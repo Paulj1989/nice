@@ -1,4 +1,4 @@
-# Nice
+# nice
 The stupidest R package ever created.
 
 To install this very stupid package:
