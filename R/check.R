@@ -6,8 +6,9 @@
 #' check(69)
 
 check <- function(x) {
-  if (x %in% c(69, 0.69))
-  {
+  if (x %in% c(69, 0.69)) {
     print("Nice!")
+  } else {
+    print("Not very nice.")
   }
 }
