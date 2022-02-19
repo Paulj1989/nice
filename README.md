@@ -20,7 +20,7 @@ devtools::install_github("paulj1989/nice")
 To check if your outputs are noiiiiiiice:
 
 ```R
-nice::check(69)
+nice::check(x)
 ```
 
 You can also check if there's anything nice in your data frame:
