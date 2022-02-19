@@ -6,8 +6,9 @@
 #' check_df(69)
 
 check_df <- function(x) {
-  if (any(x == c(69, 0.69)))
-  {
+  if (any(x == c(69, 0.69))) {
     print("Nice!")
+  } else {
+    print("Not very nice.")
   }
 }
