@@ -1,14 +1,15 @@
 Package: nice
-Type: Package
-Title: Nice: Checking if your output is nice!
-Version: 0.1.0
-Author: Paul Johnson
-Maintainer: Paul Johnson <paul@paulrjohnson.net>
-Description: Have you ever wondered if your output is noiiiice? No probably not. But now you can check if it is, for reasons.
-License: MIT License
+Title: Checking if your R outputs are nice!
+Version: 0.0.0.9000
+Authors@R: 
+    person("Paul", "Johnson", , "paul@paulrjohnson.net", role = c("aut", "cre"))
+Description: Have you ever wondered if your output is noiiiice? No probably not.
+    But now you can check if it is, for reasons.
+License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
-RoxygenNote: 7.1.2
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
 Suggests: 
-    testthat (>= 3.0.0)
+  testthat (>= 3.0.0)
 Config/testthat/edition: 3
+URL: https://paulj1989.github.io/nice/
