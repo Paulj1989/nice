@@ -1,4 +1,4 @@
-# nice
+# nice <img src="man/figures/logo.png" align="right" height="278" />
 
 This surely qualifies as the stupidest R package ever created.
 

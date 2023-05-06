@@ -2,14 +2,25 @@
 % Please edit documentation in R/check.R
 \name{check}
 \alias{check}
-\title{Checking whether your R output is really nice}
+\title{Checking whether an R output is really nice}
 \usage{
 check(x)
 }
+\arguments{
+\item{x}{An R object. Can be a list or vector, and values can be of type
+numeric, double, or character.}
+}
 \description{
-Checking whether your R output is really nice
+Checking whether an R output is really nice
 }
 \examples{
-check(69)
+x <- 23 * 3
+check(x)
+
+x <- c(1, 2, 3, 4, 5)
+check(x)
+
+x <- c("ten", "twenty", "thirty", "sixty nine")
+check(x)
 }
 \keyword{nice}
