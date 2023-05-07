@@ -1,4 +1,8 @@
-# nice <img src="man/figures/logo.png" align="right" height="278" />
+# nice <a href="https://paulj1989.github.io/nice/"><img src="man/figures/logo.png" align="right" height="278" /></a>
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+<!-- badges: end -->
 
 This surely qualifies as the stupidest R package ever created.
 
