@@ -1,4 +1,29 @@
 url: https://paulj1989.github.io/nice/
 template:
   bootstrap: 5
+  bslib:
+    base_font: {google: "IBM Plex Sans"}
+navbar:
+  structure:
+    right: [twitter, github]
+  components:
+    twitter:
+      icon: fa-twitter
+      href: https://twitter.com/paulj1989
+      aria-label: Twitter
+    github:
+      icon: fa-github
+      href: https://github.com/paulj1989/nice
+      aria-label: GitHub
+authors:
+  Paul Johnson:
+    href: "https://paulrjohnson.net"
 
+reference:
+  - title: Nice Checks
+    desc: >
+      Functions for checking if R objects and data frames are replete with
+      niceness.
+    contents:
+      - check
+      - check_df
