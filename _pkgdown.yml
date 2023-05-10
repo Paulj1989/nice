@@ -9,7 +9,7 @@ navbar:
   components:
     twitter:
       icon: fa-twitter
-      href: https://twitter.com/paulj1989
+      href: https://twitter.com/paul_johnson89
       aria-label: Twitter
     github:
       icon: fa-github
