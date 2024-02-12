@@ -12,4 +12,5 @@ test_that("check functions returns correct negative responses", {
   expect_equal(check(0.420), "Not very nice.")
   expect_equal(check(420), "Not very nice.")
   expect_equal(check("four twenty"), "Not very nice.")
+  expect_equal(check(check), "Not very nice.")
 })

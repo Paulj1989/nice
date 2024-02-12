@@ -25,6 +25,10 @@ check <- function(x) {
 }
 
 is_nice <- function(x) {
-  any(x %in% c(69, 0.69, 0.069, 0.0069, "Sixty Nine", "sixty nine"))
+  isTRUE(
+    try(
+      any(x %in% c(69, 0.69, 0.069, 0.0069, "Sixty Nine", "sixty nine")),
+      silent = TRUE
+    )
+  )
 }
-
