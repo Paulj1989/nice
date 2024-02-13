@@ -18,8 +18,16 @@ test_that("uncheck_always() removes callback", {
   expect_false("nice_callback" %in% getTaskCallbackNames())
 })
 
+test_that("verbose argument controls messages", {
+  expect_silent(check_always(verbose = FALSE))
+  expect_true("nice_callback" %in% getTaskCallbackNames())
+
+  expect_silent(uncheck_always(verbose = FALSE))
+  expect_false("nice_callback" %in% getTaskCallbackNames())
+})
+
 test_that("check_always() doesn't add duplicate callback tasks", {
-  expect_message(check_always())
+  check_always(verbose = FALSE)
 
   callback_list <- getTaskCallbackNames()
 
@@ -32,7 +40,7 @@ test_that("check_always() doesn't add duplicate callback tasks", {
 })
 
 test_that("uncheck_always() does nothing if there is no task callback", {
-  expect_message(uncheck_always())
+  uncheck_always(verbose = FALSE)
 
   callback_list <- getTaskCallbackNames()
 

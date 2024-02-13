@@ -5,9 +5,14 @@
 \alias{uncheck_always}
 \title{Always check whether R output is really nice}
 \usage{
-check_always()
+check_always(verbose = TRUE)
 
-uncheck_always()
+uncheck_always(verbose = TRUE)
+}
+\arguments{
+\item{verbose}{If \code{TRUE}, prints a message when \code{check_always()} and
+\code{uncheck_always()} are run.
+Defaults to \code{TRUE}.}
 }
 \description{
 \code{check_always()} creates a \link[=addTaskCallback]{task callback function}

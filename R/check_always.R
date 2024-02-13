@@ -13,6 +13,10 @@ nice_callback <- function(expr, value, ok, visible) {
 #' `uncheck_always()` disables the task callback function,
 #' returning your R session to normal behavior.
 #'
+#' @param verbose If `TRUE`, prints a message when `check_always()` and
+#' `uncheck_always()` are run.
+#' Defaults to `TRUE`.
+#'
 #' @keywords nice
 #'
 #' @export
@@ -23,22 +27,24 @@ nice_callback <- function(expr, value, ok, visible) {
 #'
 #' uncheck_always()
 #' 23 * 3
-check_always <- function() {
+check_always <- function(verbose = TRUE) {
   if ("nice_callback" %in% getTaskCallbackNames()) {
-    return(message("Already checking whether all output is nice"))
+    if (isTRUE(verbose)) message("Already checking whether all output is nice")
+    return(invisible())
   }
 
   addTaskCallback(nice_callback, name = "nice_callback")
-  message("Now checking whether all output is nice")
+  if (isTRUE(verbose)) message("Now checking whether all output is nice")
 }
 
 #' @rdname check_always
 #' @export
-uncheck_always <- function() {
+uncheck_always <- function(verbose = TRUE) {
   if (!"nice_callback" %in% getTaskCallbackNames()) {
-    return(message("Not checking whether all output is nice"))
+    if (isTRUE(verbose)) message("Not checking whether all output is nice")
+    return(invisible())
   }
 
   removeTaskCallback("nice_callback")
-  message("No longer checking whether all output is nice")
+  if (isTRUE(verbose)) message("No longer checking whether all output is nice")
 }
