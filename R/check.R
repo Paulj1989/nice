@@ -17,9 +17,18 @@
 #' x <- c("ten", "twenty", "thirty", "sixty nine")
 #' check(x)
 check <- function(x) {
-  if (any(x %in% c(69, 0.69, 0.069, 0.0069, "Sixty Nine", "sixty nine"))) {
+  if (is_nice(x)) {
     print("Nice!")
   } else {
     print("Not very nice.")
   }
+}
+
+is_nice <- function(x) {
+  isTRUE(
+    try(
+      any(x %in% c(69, 0.69, 0.069, 0.0069, "Sixty Nine", "sixty nine")),
+      silent = TRUE
+    )
+  )
 }
