@@ -8,7 +8,7 @@ nice_callback <- function(expr, value, ok, visible) {
 
 #' Always check whether R output is really nice
 #'
-#' `check_always()` creates a [task callback function][taskCallback()]
+#' `check_always()` creates a [task callback function][addTaskCallback()]
 #' to check whether all R output is nice.
 #' `uncheck_always()` disables the task callback function,
 #' returning your R session to normal behavior.
