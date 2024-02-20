@@ -21,12 +21,19 @@ nice_callback <- function(expr, value, ok, visible) {
 #'
 #' @export
 #'
-#' @examples
+#' @section Examples:
+#' ```r
 #' check_always()
+#' #> Now checking whether all output is nice
 #' 23 * 3
+#' #> [1] 69
+#' #> Nice!
 #'
 #' uncheck_always()
+#' #> No longer checking whether all output is nice
 #' 23 * 3
+#' #> [1] 69
+#' ```
 check_always <- function(verbose = TRUE) {
   if ("nice_callback" %in% getTaskCallbackNames()) {
     if (isTRUE(verbose)) message("Already checking whether all output is nice")
