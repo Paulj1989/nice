@@ -20,11 +20,20 @@ to check whether all R output is nice.
 \code{uncheck_always()} disables the task callback function,
 returning your R session to normal behavior.
 }
-\examples{
-check_always()
+\section{Examples}{
+
+
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{check_always()
+#> Now checking whether all output is nice
 23 * 3
+#> [1] 69
+#> Nice!
 
 uncheck_always()
+#> No longer checking whether all output is nice
 23 * 3
+#> [1] 69
+}\if{html}{\out{</div>}}
 }
+
 \keyword{nice}
