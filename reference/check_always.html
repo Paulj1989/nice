@@ -76,20 +76,23 @@ returning your R session to normal behavior.</p>
 Defaults to <code>TRUE</code>.</p></dd>
 
 </dl></div>
-
     <div class="section level2">
-    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">check_always</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Now checking whether all output is nice</span>
-<span class="r-in"><span><span class="fl">23</span> <span class="op">*</span> <span class="fl">3</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 69</span>
-<span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="fu">uncheck_always</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> No longer checking whether all output is nice</span>
-<span class="r-in"><span><span class="fl">23</span> <span class="op">*</span> <span class="fl">3</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 69</span>
-</code></pre></div>
+    <h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a></h2>
+    
+
+
+<p></p><div class="sourceCode r"><pre><code><span><span class="fu"><a href="../reference/check_always.html">check_always</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Now checking whether all output is nice</span></span>
+<span><span class="fl">23</span> <span class="op">*</span> <span class="fl">3</span></span>
+<span><span class="co">#&gt; [1] 69</span></span>
+<span><span class="co">#&gt; Nice!</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/check_always.html">uncheck_always</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; No longer checking whether all output is nice</span></span>
+<span><span class="fl">23</span> <span class="op">*</span> <span class="fl">3</span></span>
+<span><span class="co">#&gt; [1] 69</span></span></code></pre><p></p></div>
     </div>
+
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
 

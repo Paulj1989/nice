@@ -2,7 +2,7 @@ pandoc: 2.19.2
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles: {}
-last_built: 2024-02-13T11:38Z
+last_built: 2024-02-20T11:42Z
 urls:
   reference: https://paulj1989.github.io/nice/reference
   article: https://paulj1989.github.io/nice/articles
